@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import './home.dart';
 class HomeManager extends StatefulWidget {
+  final String startingHome;
+
+  HomeManager({this.startingHome = 'awal boz'});
+
   @override
   State<StatefulWidget> createState() {
     // TODO: implement createState
@@ -9,7 +13,19 @@ class HomeManager extends StatefulWidget {
 }
 
 class _HomeManagerState extends State<HomeManager> {
-  List<String> _kehadiran = ['Hadir'];
+  List<String> _kehadiran = [];
+
+  @override
+  void initState(){
+    _kehadiran.add(widget.startingHome);
+    super.initState();
+  }
+
+
+  @override
+  void didUpdateWidget(HomeManager oldWidget) {
+
+  }
 
   @override
   Widget build(BuildContext context) {

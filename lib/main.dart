@@ -9,10 +9,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+        theme: ThemeData(primarySwatch: Colors.teal),
         home: Scaffold(
             appBar: AppBar(
               title: Text('home'),
             ),
-            body: HomeManager()));
+            body: HomeManager(
+              startingHome: 'hadir boz',
+            )));
   }
 }

@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment:
                         MainAxisAlignment.spaceAround,
-                        children: <Widget>[new Text("11-11-1111")],
+                        children: <Widget>[new Text(element)],
                       )),
                   TableCell(
                       child: Row(
